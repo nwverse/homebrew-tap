@@ -1,5 +1,9 @@
-# Homebrew formula for the disklessly CLI.
-# Generated from packaging/homebrew/disklessly-cli.rb in nwverse/disklessly for 0.3.0.
+# Homebrew formula template for the disklessly CLI.
+# Copy the result into a tap (for example nwverse/homebrew-tap/Formula/disklessly-cli.rb)
+# and fill in the sha256 of each release archive. `brew audit` rejects `url` and
+# `sha256` directly inside `on_macos` or `on_linux`, so each one is nested under
+# `on_arm` and `on_intel`. The macOS archive is universal, so both architectures
+# point at the same file.
 class DisklesslyCli < Formula
   desc "Offload rarely used Mac apps to a repo and launch them on demand"
   homepage "https://github.com/nwverse/disklessly"
@@ -7,23 +11,23 @@ class DisklesslyCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.0/disklessly-0.3.0-macos-universal.tar.gz"
-      sha256 "4874282b06883c6640135e88bb1c3bd1f524f7971d7d049449fdc97e278bd4d4"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-macos-universal.tar.gz"
+      sha256 "a51e91abcfedd8b00867443eabb843530703f654ddd9f4ffab0b22ce41cbba64"
     end
     on_intel do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.0/disklessly-0.3.0-macos-universal.tar.gz"
-      sha256 "4874282b06883c6640135e88bb1c3bd1f524f7971d7d049449fdc97e278bd4d4"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-macos-universal.tar.gz"
+      sha256 "a51e91abcfedd8b00867443eabb843530703f654ddd9f4ffab0b22ce41cbba64"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.0/disklessly-0.3.0-linux-aarch64.tar.gz"
-      sha256 "37a438b51b5dbf3eed263cbd6674b997377f3b33472e370f0263807cc86f6beb"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-linux-aarch64.tar.gz"
+      sha256 "2f362e536fdb2dff119aa101dce12ed163baab28852fb6159344431f5d651c2a"
     end
     on_intel do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.0/disklessly-0.3.0-linux-x86_64.tar.gz"
-      sha256 "838ee938d98333fbb8d451ddada6075bc9086a2b8a1b2386be2e667005b4fbf8"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-linux-x86_64.tar.gz"
+      sha256 "f3f29e36381d0b45dd70809e4326d3ecf194a4bd4771898d469f33311e8c4610"
     end
   end
 

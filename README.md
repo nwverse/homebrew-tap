@@ -15,7 +15,7 @@ brew install disklessly-cli
 This installs the `disklessly` command and the `dkl` alias. On macOS it also
 installs `disklessly-stub`, the launcher that packed apps run through.
 
-The macOS binary in the 0.3.0 release is **not signed with an Apple Developer ID
+The macOS binary is **not signed with an Apple Developer ID
 and is not notarized**, so Gatekeeper blocks the first run. `brew install` prints
 the `xattr` command that clears the quarantine flag; run it once after installing.
 
