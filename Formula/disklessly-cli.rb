@@ -11,23 +11,23 @@ class DisklesslyCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-macos-universal.tar.gz"
-      sha256 "a51e91abcfedd8b00867443eabb843530703f654ddd9f4ffab0b22ce41cbba64"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-macos-universal.tar.gz"
+      sha256 "9e04f39bdef6a1ed5fae85520086ccb004c6943e76dbc4a14c9831149c13f56c"
     end
     on_intel do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-macos-universal.tar.gz"
-      sha256 "a51e91abcfedd8b00867443eabb843530703f654ddd9f4ffab0b22ce41cbba64"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-macos-universal.tar.gz"
+      sha256 "9e04f39bdef6a1ed5fae85520086ccb004c6943e76dbc4a14c9831149c13f56c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-linux-aarch64.tar.gz"
-      sha256 "2f362e536fdb2dff119aa101dce12ed163baab28852fb6159344431f5d651c2a"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-linux-aarch64.tar.gz"
+      sha256 "4f9862f317c4a352fe3acd09cb79f5150f539c49a06ff089c654a94327e758f1"
     end
     on_intel do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.1/disklessly-0.3.1-linux-x86_64.tar.gz"
-      sha256 "f3f29e36381d0b45dd70809e4326d3ecf194a4bd4771898d469f33311e8c4610"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-linux-x86_64.tar.gz"
+      sha256 "b47b3f09d2a48829cc92995623cb24a1a84382656e141f6f0cb74b34aba3a26b"
     end
   end
 
@@ -48,11 +48,6 @@ class DisklesslyCli < Formula
   def caveats
     on_macos do
       <<~EOS
-        The macOS build in this release is not signed with an Apple Developer ID and is
-        not notarized, so Gatekeeper blocks it the first time it runs. Clear the
-        quarantine flag Homebrew sets:
-          xattr -dr com.apple.quarantine "#{opt_bin}/disklessly" "#{opt_bin}/disklessly-stub"
-
         Stubs exec a stable copy of the engine under
           ~/Library/Application Support/Disklessly/bin/disklessly
         After installing or upgrading, refresh that copy and your stubs:
