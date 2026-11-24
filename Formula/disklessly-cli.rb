@@ -11,23 +11,23 @@ class DisklesslyCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-macos-universal.tar.gz"
-      sha256 "9e04f39bdef6a1ed5fae85520086ccb004c6943e76dbc4a14c9831149c13f56c"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.3/disklessly-0.3.3-macos-universal.tar.gz"
+      sha256 "8ea830c1b7ace35b7d54762f1a6df333c9331ad141fb17a1950de7b31bf8bdcd"
     end
     on_intel do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-macos-universal.tar.gz"
-      sha256 "9e04f39bdef6a1ed5fae85520086ccb004c6943e76dbc4a14c9831149c13f56c"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.3/disklessly-0.3.3-macos-universal.tar.gz"
+      sha256 "8ea830c1b7ace35b7d54762f1a6df333c9331ad141fb17a1950de7b31bf8bdcd"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-linux-aarch64.tar.gz"
-      sha256 "4f9862f317c4a352fe3acd09cb79f5150f539c49a06ff089c654a94327e758f1"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.3/disklessly-0.3.3-linux-aarch64.tar.gz"
+      sha256 "2e540cbf8c285c20a516c657195610b39b1911bfae364980f8f5ded74f28e1d3"
     end
     on_intel do
-      url "https://github.com/nwverse/disklessly/releases/download/v0.3.2/disklessly-0.3.2-linux-x86_64.tar.gz"
-      sha256 "b47b3f09d2a48829cc92995623cb24a1a84382656e141f6f0cb74b34aba3a26b"
+      url "https://github.com/nwverse/disklessly/releases/download/v0.3.3/disklessly-0.3.3-linux-x86_64.tar.gz"
+      sha256 "9ea97bdf39c967a3ceb5f47a371f094ede7d69469b25a5501f2cd3406136da3f"
     end
   end
 
