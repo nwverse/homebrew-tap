@@ -2,31 +2,29 @@
 
 Homebrew formulae for [nwverse](https://github.com/nwverse) projects.
 
-## Install the Disklessly CLI
+## Install Disklessly
 
 ```sh
-brew tap nwverse/tap
-brew install disklessly-cli
+brew install --cask nwverse/tap/disklessly    # menu-bar app; also links disklessly and dkl
+brew install nwverse/tap/disklessly-cli       # or only the CLI (macOS and Linux)
 ```
+
+Install one or the other, not both.
 
 `nwverse/tap` is this repository (`nwverse/homebrew-tap`); Homebrew shortens
 `homebrew-` tap names, so `brew tap nwverse/tap` is the command to use.
 
-This installs the `disklessly` command and the `dkl` alias. On macOS it also
-installs `disklessly-stub`, the launcher that packed apps run through.
-
-The macOS binary is **not signed with an Apple Developer ID
-and is not notarized**, so Gatekeeper blocks the first run. `brew install` prints
-the `xattr` command that clears the quarantine flag; run it once after installing.
+The cask installs the signed, notarized **Disklessly.app** and links the CLI inside it.
+The formula installs the `disklessly` command and the `dkl` alias; on macOS it also
+installs `disklessly-stub`, the launcher that packed apps run through. Since 0.3.2 the
+macOS binaries are signed with an Apple Developer ID and notarized, so no `xattr`
+step is needed.
 
 On Linux, Homebrew installs the matching build (x86_64 or aarch64). It needs
 glibc 2.34 or newer, plus `libsqlite3`, `libcurl`, and `libxml2`. Offloading apps
 is macOS only; the Linux build covers files and folders, container images, remote
 machines, and coding-agent sessions. See
 [docs/linux.md](https://github.com/nwverse/disklessly/blob/main/docs/linux.md).
-
-The menu-bar app (the `disklessly` cask) is not published yet. It waits for an
-Apple Developer ID certificate.
 
 ## Verify a download
 
