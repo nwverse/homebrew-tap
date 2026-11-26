@@ -2,8 +2,8 @@
 # The release workflow fills in VERSION and SHA256. Copy the result into a tap
 # (for example nwverse/homebrew-tap/Casks/disklessly.rb).
 cask "disklessly" do
-  version "0.3.3"
-  sha256 "60555af9325d1d080fd993da2d14930e04744489a53b91a94c23a344dcb9686c"
+  version "0.3.4"
+  sha256 "829ec6923429056fcde93681f2580246be820350920aa456b26b3d06e1fa7261"
 
   url "https://github.com/nwverse/disklessly/releases/download/v#{version}/Disklessly-#{version}.dmg"
   name "Disklessly"
